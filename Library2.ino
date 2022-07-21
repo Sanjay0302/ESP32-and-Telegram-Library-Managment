@@ -8,7 +8,7 @@
 #define WIFI_PASSWORD "my_wifi_password"
 // Telegram BOT Token (Get from Botfather)
 #define BOT_TOKEN "5487826983:AAHM-NBNme4EQoQewS6iDJbb9aVUcohZw14"
-const unsigned long BOT_MTBS = 10; // mean time between scan messages
+const unsigned long BOT_MTBS = 100; // mean time between scan messages
 
 WiFiClientSecure secured_client;
 UniversalTelegramBot bot(BOT_TOKEN, secured_client);
@@ -224,7 +224,7 @@ void handleNewMessages(int numNewMessages)
     
     
 //prompting user about the subjects available
-  if (text == "/listofsubject" || "/start")
+  if (text == "/listofsubject")
     {
     String welcome = "Welcome to ESP32 Telegram Bot library, " + from_name + ".\n\n";
       welcome += "This the list of subject you can select.\n\n";
@@ -239,20 +239,20 @@ void handleNewMessages(int numNewMessages)
   }
     
     
-// // result after /start is received
-//   if (text == "/start")
-//     {
-//     String welcome = "Welcome to ESP32 Telegram Bot library, " + from_name + ".\n\n";
-//       welcome += "This the list of subject you can select.\n\n";
-//       welcome += "/mathsnotes\n";
-//       welcome += "/ntnotes\n";
-//       welcome += "/ednotes\n";
-//       welcome += "/dsdnotes\n";
-//       welcome += "/conotes\n";
-//       welcome += "/penotes\n";
-//       bot.sendMessage(chat_id, welcome, "Markdown");
+// result after /start is received
+  if (text == "/start")
+    {
+    String welcome = "Welcome to ESP32 Telegram Bot library, " + from_name + ".\n\n";
+      welcome += "This the list of subject you can select.\n\n";
+      welcome += "/mathsnotes\n";
+      welcome += "/ntnotes\n";
+      welcome += "/ednotes\n";
+      welcome += "/dsdnotes\n";
+      welcome += "/conotes\n";
+      welcome += "/penotes\n";
+      bot.sendMessage(chat_id, welcome, "Markdown");
     
-//   }
+  }
   
   }
 
