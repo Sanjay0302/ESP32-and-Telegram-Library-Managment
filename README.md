@@ -53,8 +53,8 @@ This Feature list involves libraries and services used for this project
 
 :star2: Coded Used [`Embeded C`](https://en.wikipedia.org/wiki/Embedded_C)
 
-:star2: <a href="https://telegram.me/sbsaesp32_bot"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>
-```You can find me through this link```
+:star2: ```You can find me through this link``` <a href="https://telegram.me/sbsaesp32_bot"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>
+
 
 -----------------------------------------------------
 
@@ -73,7 +73,7 @@ Features of ESP32 used For This Project	:file_folder:
 
 :star2: Wi-Fi functionality  `(2.4 GHz), up to 150 Mbps` 	:tokyo_tower:
 
-:star2: UART `(Universal Asynchronous Receiver/Transmitter) :computer:` is the microchip with programming that controls a 
+:star2: UART `(Universal Asynchronous Receiver/Transmitter) ` :computer: is the microchip with programming that controls a 
 computer's interface to its attached serial devices.
 
 :star2: `Xtensa® single-/dual-core 32-bit LX6 microprocessor(s) 1 core at 240 MHz and 2 core at 240 MHz`
